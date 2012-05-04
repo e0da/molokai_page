@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Molokai colors</title>
+    <style>
+      span {
+        display: block;
+        padding: 2px 5px;
+        margin: 10px auto;
+        background: #eee;
+        color: #333;
+        font: 10px/10px sans-serif;
+        text-align:center;
+        width: 60px;
+        height: 10px;
+        opacity: 0.9;
+      }
+      div {
+        width: 100px;
+        height: 34px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+    <script>
+    $.each([
+      '#000000',
+      '#080808',
+      '#13354A',
+      '#1B1D1E',
+      '#1E0010',
+      '#232526',
+      '#272822',
+      '#293739',
+      '#333333',
+      '#3B3A32',
+      '#3E3D32',
+      '#403D3D',
+      '#455354',
+      '#465457',
+      '#4C4745',
+      '#66D9EF',
+      '#7070F0',
+      '#70F0F0',
+      '#75715E',
+      '#808080',
+      '#89807D',
+      '#8F8F8F',
+      '#960050',
+      '#A6E22E',
+      '#AE81FF',
+      '#BCA3A3',
+      '#BCBCBC',
+      '#C4BE89',
+      '#E6DB74',
+      '#ef5939',
+      '#F8F8F0',
+      '#F8F8F2',
+      '#F92672',
+      '#FD971F',
+      '#FF0000',
+      '#FFFFFF'
+    ], function () {
+      var div, span;
+      div = $('<div>');
+      span = $('<span>' + this + '</span>');
+
+      $('body').append(div);
+      div.append(span);
+
+      div.css({
+        background: this,
+      });
+    });
+    </script>
+  </body>
+</html>
